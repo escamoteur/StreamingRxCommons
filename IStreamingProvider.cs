@@ -9,6 +9,6 @@ namespace StreamingRxCommons
 {
     public interface IStreamingProvider
     {
-        ObservableCollection<IAlbum> GetNewReleases(int limit, int offset = 0);
+        IObservable<IEnumerable<IAlbum>> GetNewReleases(int limit, int offset = 0);
     }
 }
