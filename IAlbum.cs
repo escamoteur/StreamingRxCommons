@@ -8,8 +8,13 @@ namespace StreamingRxCommons
 {
     public interface IAlbum
     {
+        string ServiceItemId { get; }
+
         string Name { get;}
         string Artist { get; }
+
+        string CoverUrl { get; }
+
 
     }
 }

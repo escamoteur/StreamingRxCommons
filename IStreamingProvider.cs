@@ -10,5 +10,12 @@ namespace StreamingRxCommons
     public interface IStreamingProvider
     {
         IObservable<IEnumerable<IAlbum>> GetNewReleases(int limit, int offset = 0);
+
+        IObservable<IEnumerable<IAlbum>> SearchAlbumsFreeText(string searchText, int limit, int offset = 0);
+
+        IObservable<IEnumerable<ITrack>> GetTracksForAlbum(IAlbum album, int limit, int offset = 0);
+
+        IObservable<IEnumerable<ITrack>> GetTracksForAlbum(string album_service_Id, int limit, int offset = 0);
+
     }
 }
