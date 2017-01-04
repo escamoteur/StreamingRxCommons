@@ -15,8 +15,5 @@ namespace StreamingRxCommons
 
         string CoverUrl { get; }
 
-        int NumberOfTracks { get; }
-
-
     }
 }
