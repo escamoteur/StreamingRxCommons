@@ -19,5 +19,7 @@ namespace StreamingRxCommons
 
         IObservable<IEnumerable<ITrack>> GetTracksForAlbum(string album_service_Id, int limit, int offset = 0);
 
+        IObservable<int> GetTrackCountForAlbum(string album_service_Id);
+
     }
 }
