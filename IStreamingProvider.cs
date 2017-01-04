@@ -13,6 +13,8 @@ namespace StreamingRxCommons
 
         IObservable<IEnumerable<IAlbum>> SearchAlbumsFreeText(string searchText, int limit, int offset = 0);
 
+        IObservable<IEnumerable<IAlbum>> GetAlbumByServiceId(string serviceID);
+
         IObservable<IEnumerable<ITrack>> GetTracksForAlbum(IAlbum album, int limit, int offset = 0);
 
         IObservable<IEnumerable<ITrack>> GetTracksForAlbum(string album_service_Id, int limit, int offset = 0);
