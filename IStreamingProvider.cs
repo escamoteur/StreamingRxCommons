@@ -11,7 +11,7 @@ namespace StreamingRxCommons
     {
         IObservable<IEnumerable<IAlbum>> GetNewReleases(int limit, int offset = 0);
 
-        IObservable<IEnumerable<IAlbum>> SearchAlbumsFreeText(string searchText, int limit, int offset = 0);
+        IObservable<IEnumerable<IAlbum>> SearchAlbumsFreeText(string searchText, int limit, int offset = 0, string maket = "US");
 
         IObservable<IEnumerable<IAlbum>> GetAlbumByServiceId(string serviceID);
 
